@@ -9,6 +9,7 @@ const peers = {};
 const myPeer = new Peer(undefined, {
   host: "0.peerjs.com",
   port: 443,
+  path: "/peerjs",
   secure: true,
   config: {
     iceServers: [
