@@ -8,6 +8,7 @@ const peers = {};
 
 const myPeer = new Peer(undefined, {
   host: "edu-meeting.herokuapp.com",
+  port: 3001,
   secure: true,
 });
 
