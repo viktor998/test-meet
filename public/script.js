@@ -53,7 +53,7 @@ const myPeer = new Peer(undefined, {
 navigator.mediaDevices
   .getUserMedia({
     video: true,
-    audio: false,
+    audio: true,
   })
   .then((stream) => {
     addStream(thisUserVideo, stream);
