@@ -4,6 +4,14 @@ const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 
+var ExpressPeerServer = require("peer").ExpressPeerServer;
+var options = {
+  debug: true,
+  allow_discovery: true,
+};
+let peerServer = ExpressPeerServer(server, options);
+app.use("/peerjs", peerServer);
+
 /*  */
 app.set("view engine", "ejs");
 app.use(express.static("public"));

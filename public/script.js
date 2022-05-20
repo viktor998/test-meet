@@ -9,6 +9,7 @@ const peers = {};
 const myPeer = new Peer(undefined, {
   host: "edu-meeting.herokuapp.com",
   port: 443,
+  path: "/peerjs",
   secure: true,
   config: {
     iceServers: [
