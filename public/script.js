@@ -7,8 +7,8 @@ thisUserVideo.muted = true;
 const peers = {};
 
 const myPeer = new Peer(undefined, {
-  host: "/",
-  port: "3001",
+  host: "edu-meeting.herokuapp.com",
+  secure: true,
 });
 
 navigator.mediaDevices
