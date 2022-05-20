@@ -8,7 +8,7 @@ const io = require("socket.io")(server);
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-let userId;
+// let userId;
 
 // app.get("/:room/:user", (req, res) => {
 //   userId = req.params.user;
