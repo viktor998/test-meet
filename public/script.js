@@ -7,7 +7,7 @@ thisUserVideo.muted = true;
 const peers = {};
 
 const myPeer = new Peer(undefined, {
-  host: "/",
+  host: "0.peerjs.com",
   port: 443,
   secure: true,
   config: {
