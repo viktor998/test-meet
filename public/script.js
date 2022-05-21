@@ -67,6 +67,8 @@ navigator.mediaDevices
       });
     });
 
+    socket.emit("client-ready");
+
     socket.on("user-connected", (userId) => {
       console.log("User connected : " + userId);
 
